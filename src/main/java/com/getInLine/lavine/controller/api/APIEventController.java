@@ -9,7 +9,9 @@ import java.util.List;
 @RestController
 public class APIEventController {
     @GetMapping("/events")
-    public List<String> getEvents() {return Arrays.asList("event1", "event2");}
+    public List<String> getEvents() {
+        return Arrays.asList("event1", "event2");
+    }
 
     @PostMapping("/events")
     public Boolean createEvent() {return true;}
